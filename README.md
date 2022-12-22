@@ -24,10 +24,12 @@ The template repository contains a template Swift Package, including a continuou
 
 
 ## Installation
-TemplatePackage can be installed into your Xcode project using [Swift Package Manager](https://github.com/apple/swift-package-manager).
 
-1. In Xcode 14 and newer (requires Swift 5.7), go to “File” » “Add Packages...”
-2. Enter the URL to this GitHub repository, then select the `TemplatePackage` package to install.
+The project can be added to your Xcode project or Swift Package using the [Swift Package Manager](https://github.com/apple/swift-package-manager).
+
+**Xcode:** For an Xcode project, follow the instructions on [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
+
+**Swift Package:** You can follow the [Swift Package Manager documentation about defining dependencies](https://github.com/apple/swift-package-manager/blob/main/Documentation/Usage.md#defining-dependencies) to add this project as a dependency to your Swift Package.
 
 
 ## License
