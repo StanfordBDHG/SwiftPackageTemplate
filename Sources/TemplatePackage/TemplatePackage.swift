@@ -8,7 +8,7 @@
 
 /// The main type of the Swift Package template.
 public struct TemplatePackage {
-    /// The Swift Package tempalte package is provided by Stanford University.
+    /// The Swift Package template package is provided by Stanford University.
     public var stanford: String {
         "Stanford University"
     }
