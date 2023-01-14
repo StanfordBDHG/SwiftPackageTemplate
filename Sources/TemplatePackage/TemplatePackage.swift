@@ -6,8 +6,10 @@
 // SPDX-License-Identifier: MIT
 //
 
-struct TemplatePackage {
-    var stanford: String {
+/// The main type of the Swift Package template.
+public struct TemplatePackage {
+    /// The Swift Package tempalte package is provided by Stanford University.
+    public var stanford: String {
         "Stanford University"
     }
 }
