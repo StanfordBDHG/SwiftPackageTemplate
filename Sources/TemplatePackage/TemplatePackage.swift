@@ -14,5 +14,6 @@ public struct TemplatePackage {
     }
     
     
+    /// The main type of the Swift Package template.
     public init() {}
 }
