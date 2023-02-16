@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-@testable import TemplatePackage
+import TemplatePackage
 
 
 @main

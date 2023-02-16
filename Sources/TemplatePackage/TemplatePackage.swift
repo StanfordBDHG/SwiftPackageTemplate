@@ -12,4 +12,8 @@ public struct TemplatePackage {
     public var stanford: String {
         "Stanford University"
     }
+    
+    
+    /// The main type of the Swift Package template.
+    public init() {}
 }
