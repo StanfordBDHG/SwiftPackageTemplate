@@ -12,4 +12,7 @@ public struct TemplatePackage {
     public var stanford: String {
         "Stanford University"
     }
+    
+    
+    public init() {}
 }
