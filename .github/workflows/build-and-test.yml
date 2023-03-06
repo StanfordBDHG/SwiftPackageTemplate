@@ -29,6 +29,7 @@ jobs:
     with:
       artifactname: TestApp.xcresult
       runsonlabels: '["macOS", "self-hosted"]'
+      path: 'Tests/UITests'
       scheme: TestApp
   uploadcoveragereport:
     name: Upload Coverage Report
