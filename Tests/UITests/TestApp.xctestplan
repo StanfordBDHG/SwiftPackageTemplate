@@ -9,10 +9,14 @@
     }
   ],
   "defaultOptions" : {
-    "targetForVariableExpansion" : {
-      "containerPath" : "container:UITests.xcodeproj",
-      "identifier" : "2F6D139128F5F384007C25D6",
-      "name" : "TestApp"
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:..\/..",
+          "identifier" : "TemplatePackage",
+          "name" : "TemplatePackage"
+        }
+      ]
     }
   },
   "testTargets" : [
