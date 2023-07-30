@@ -62,6 +62,7 @@ jobs:
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       runsonlabels: '["macOS", "self-hosted"]'
+      xcodeversion: latest
       path: 'Tests/UITests'
       scheme: TestAppWatchApp
       resultBundle: TestAppWatchApp.xcresult
