@@ -28,6 +28,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F9CBEA52A76C40E009818FF"
+               BuildableName = "TestApp Watch App.app"
+               BlueprintName = "TestAppWatchApp"
+               ReferencedContainer = "container:UITests.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F6D139128F5F384007C25D6"
                BuildableName = "TestApp.app"
                BlueprintName = "TestApp"
@@ -43,19 +57,18 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:TestApp.xctestplan"
+            reference = "container:TestAppWatchApp.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F6D13AB28F5F386007C25D6"
-               BuildableName = "TestAppUITests.xctest"
-               BlueprintName = "TestAppUITests"
+               BlueprintIdentifier = "2F9CBEBE2A76C412009818FF"
+               BuildableName = "TestAppWatchAppUITests.xctest"
+               BlueprintName = "TestAppWatchAppUITests"
                ReferencedContainer = "container:UITests.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -75,9 +88,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F6D139128F5F384007C25D6"
-            BuildableName = "TestApp.app"
-            BlueprintName = "TestApp"
+            BlueprintIdentifier = "2F9CBEA52A76C40E009818FF"
+            BuildableName = "TestApp Watch App.app"
+            BlueprintName = "TestAppWatchApp"
             ReferencedContainer = "container:UITests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -92,9 +105,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F6D139128F5F384007C25D6"
-            BuildableName = "TestApp.app"
-            BlueprintName = "TestApp"
+            BlueprintIdentifier = "2F9CBEA52A76C40E009818FF"
+            BuildableName = "TestApp Watch App.app"
+            BlueprintName = "TestAppWatchApp"
             ReferencedContainer = "container:UITests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
