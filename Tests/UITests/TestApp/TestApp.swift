@@ -6,8 +6,8 @@
 // SPDX-License-Identifier: MIT
 //
 
-@testable import TemplatePackage
 import SwiftUI
+import TemplatePackage
 
 
 @main

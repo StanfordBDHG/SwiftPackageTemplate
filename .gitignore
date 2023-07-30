@@ -10,8 +10,9 @@
 Package.resolved
 *.xcodeproj
 .swiftpm
-.build/
-.xcodebuild/
+.build
+.xcodebuild
+.derivedData
 coverage.lcov
 *.xcresult
 
