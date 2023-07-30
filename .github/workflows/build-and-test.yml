@@ -43,7 +43,6 @@ jobs:
     name: Build and Test iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestApp
       artifactname: TestApp.xcresult
@@ -51,7 +50,6 @@ jobs:
     name: Build and Test iPadOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestApp
       resultBundle: TestAppiPadOS.xcresult
@@ -61,12 +59,10 @@ jobs:
     name: Build and Test watchOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
-      xcodeversion: latest
       path: 'Tests/UITests'
       scheme: TestAppWatchApp
       resultBundle: TestAppWatchApp.xcresult
-      destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm),OS=9.4'
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
       artifactname: TestAppWatchApp.xcresult
   uploadcoveragereport:
     name: Upload Coverage Report
