@@ -19,7 +19,9 @@ SPDX-License-Identifier: MIT
 
 ## How To Use This Template
 
-The template repository contains a template Swift Package, including a continuous integration setup. Follow these steps to customize it to your needs:
+The template repository contains a template Swift Package, including a continuous integration setup. 
+
+Follow these steps to customize it to your needs:
 1. Rename the Swift Package. Be sure that you update the name in the `build-and-test.yml` GitHub Action accordingly. If you have multiple targets in your Swift Package, you need to pass the name of the Swift Package followed by an `-Package` as the scheme to the GitHub Action, e.g., `StanfordProject-Package` if your Swift Package is named `StanfordProject`.
 2. If your Swift Package does not provide any user interface or does not require an iOS application environment to function, you can remove the `UITests` application from the `Tests` folder. You need to update the `build-and-test.yml` GitHub Action accordingly by removing the GitHub Action that builds and tests the application, removing the dependency from the code coverage upload step, and removing the UI test `.xresult` input from the code coverage test. 
 3. If your Swift Package uses UI test, you need to ...
