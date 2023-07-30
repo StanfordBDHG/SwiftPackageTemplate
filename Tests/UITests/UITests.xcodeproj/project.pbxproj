@@ -40,6 +40,13 @@
 			remoteGlobalIDString = 2F9CBEA52A76C40E009818FF;
 			remoteInfo = "TestAppWatchOS Watch App";
 		};
+		2FF8922F2A770DE200903A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F6D138A28F5F384007C25D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F6D139128F5F384007C25D6;
+			remoteInfo = TestApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -226,6 +233,7 @@
 			);
 			dependencies = (
 				2F9CBEC12A76C412009818FF /* PBXTargetDependency */,
+				2FF892302A770DE200903A5A /* PBXTargetDependency */,
 			);
 			name = TestAppWatchAppUITests;
 			productName = "TestAppWatchOS Watch AppUITests";
@@ -363,6 +371,11 @@
 			platformFilter = ios;
 			target = 2F9CBEA52A76C40E009818FF /* TestAppWatchApp */;
 			targetProxy = 2F9CBEC72A76C412009818FF /* PBXContainerItemProxy */;
+		};
+		2FF892302A770DE200903A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F6D139128F5F384007C25D6 /* TestApp */;
+			targetProxy = 2FF8922F2A770DE200903A5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -727,7 +740,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "TestApp Watch App";
+				TEST_TARGET_NAME = TestAppWatchApp;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
@@ -751,7 +764,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "TestApp Watch App";
+				TEST_TARGET_NAME = TestAppWatchApp;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Test;
@@ -775,7 +788,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "TestApp Watch App";
+				TEST_TARGET_NAME = TestAppWatchApp;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
