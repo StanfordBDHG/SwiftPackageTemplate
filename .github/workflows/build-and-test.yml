@@ -21,7 +21,6 @@ jobs:
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       artifactname: TemplatePackage.xcresult
-      runsonlabels: '["macOS", "self-hosted"]'
       xcodeversion: latest
       scheme: TemplatePackage
   buildandtestuitests:
@@ -29,7 +28,6 @@ jobs:
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       artifactname: TestApp.xcresult
-      runsonlabels: '["macOS", "self-hosted"]'
       xcodeversion: latest
       path: 'Tests/UITests'
       scheme: TestApp
