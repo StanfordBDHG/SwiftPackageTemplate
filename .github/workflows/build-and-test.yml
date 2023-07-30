@@ -16,15 +16,30 @@ on:
   workflow_dispatch:
 
 jobs:
-  buildandtest:
-    name: Build and Test Swift Package
+  packageios:
+    name: Build and Test Swift Package iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       artifactname: TemplatePackage.xcresult
       xcodeversion: latest
       scheme: TemplatePackage
-  buildandtestuitests:
-    name: Build and Test UI Tests
+  packagewatchos:
+    name: Build and Test Swift Package watchOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      xcodeversion: latest
+      scheme: TemplatePackage
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
+  packagevisionos:
+    name: Build and Test Swift Package visionOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      runsonlabels: '["macOS", "self-hosted"]'
+      xcodeversion: latest
+      scheme: TemplatePackage
+      destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
+  ios:
+    name: Build and Test iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       runsonlabels: '["macOS", "self-hosted"]'
@@ -33,38 +48,26 @@ jobs:
       path: 'Tests/UITests'
       scheme: TestApp
   ipados:
-    name: Build and Test ipadOS
+    name: Build and Test iPadOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       runsonlabels: '["macOS", "self-hosted"]'
-      artifactname: TestApp.xcresult
       xcodeversion: latest
       path: 'Tests/UITests'
       scheme: TestApp
       destination: 'platform=iOS Simulator,name=iPad mini (6th generation)'
-  macos:
-    name: Build and Test macOS
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      runsonlabels: '["macOS", "self-hosted"]'
-      artifactname: TestApp.xcresult
-      xcodeversion: latest
-      path: 'Tests/UITests'
-      scheme: TestApp
-      destination: 'platform=macOS'
   watchos:
     name: Build and Test watchOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       runsonlabels: '["macOS", "self-hosted"]'
-      artifactname: TestAppWatchApp.xcresult
       xcodeversion: latest
       path: 'Tests/UITests'
       scheme: TestAppWatchApp
       destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
   uploadcoveragereport:
     name: Upload Coverage Report
-    needs: [buildandtest, buildandtestuitests]
+    needs: [ios, buildandtestuitests]
     uses: StanfordBDHG/.github/.github/workflows/create-and-upload-coverage-report.yml@v2
     with:
       coveragereports: TemplatePackage.xcresult TestApp.xcresult
