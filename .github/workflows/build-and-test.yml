@@ -31,6 +31,33 @@ jobs:
       xcodeversion: latest
       path: 'Tests/UITests'
       scheme: TestApp
+  ipados:
+    name: Build and Test ipadOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      artifactname: TestApp.xcresult
+      xcodeversion: latest
+      path: 'Tests/UITests'
+      scheme: TestApp
+      destination: 'platform=iOS Simulator,name=iPad mini (6th generation)'
+  macos:
+    name: Build and Test macOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      artifactname: TestApp.xcresult
+      xcodeversion: latest
+      path: 'Tests/UITests'
+      scheme: TestApp
+      destination: 'platform=macOS'
+  watchos:
+    name: Build and Test watchOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      artifactname: TestAppWatchApp.xcresult
+      xcodeversion: latest
+      path: 'Tests/UITests'
+      scheme: TestAppWatchApp
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
   uploadcoveragereport:
     name: Upload Coverage Report
     needs: [buildandtest, buildandtestuitests]
