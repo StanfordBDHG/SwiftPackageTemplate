@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.8
 
 //
 // This source file is part of the TemplatePackage open source project
@@ -16,8 +16,7 @@ let package = Package(
     platforms: [
         .iOS(.v16),
         .watchOS(.v9),
-        .macOS(.v13),
-        .visionOS(.v1)
+        .macOS(.v13)
     ],
     products: [
         .library(name: "TemplatePackage", targets: ["TemplatePackage"])
