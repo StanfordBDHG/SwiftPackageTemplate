@@ -15,8 +15,7 @@ let package = Package(
     name: "TemplatePackage",
     platforms: [
         .iOS(.v16),
-        .watchOS(.v9),
-        .macOS(.v13)
+        .watchOS(.v9)
     ],
     products: [
         .library(name: "TemplatePackage", targets: ["TemplatePackage"])
