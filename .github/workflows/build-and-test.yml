@@ -22,6 +22,7 @@ jobs:
     with:
       artifactname: TemplatePackage.xcresult
       runsonlabels: '["macOS", "self-hosted"]'
+      xcodeversion: latest
       scheme: TemplatePackage
   buildandtestuitests:
     name: Build and Test UI Tests
@@ -29,6 +30,7 @@ jobs:
     with:
       artifactname: TestApp.xcresult
       runsonlabels: '["macOS", "self-hosted"]'
+      xcodeversion: latest
       path: 'Tests/UITests'
       scheme: TestApp
   uploadcoveragereport:
