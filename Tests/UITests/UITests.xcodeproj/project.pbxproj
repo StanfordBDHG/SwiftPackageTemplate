@@ -60,10 +60,10 @@
 		2F68C3C6292E9F8F00B3E12C /* TemplatePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TemplatePackage; path = ../..; sourceTree = "<group>"; };
 		2F6D139228F5F384007C25D6 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6D139928F5F386007C25D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F6D13AC28F5F386007C25D6 /* TestApp UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestApp UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6D13AC28F5F386007C25D6 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8A431229130A8C005D2B8F /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		2F9CBEA62A76C40E009818FF /* TestApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9CBEBF2A76C412009818FF /* TestApp Watch App UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestApp Watch App UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9CBEBF2A76C412009818FF /* TestAppWatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppWatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7382B290ADFAA007ACEB9 /* TestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		2FB0758A299DDB9000C0B37F /* TestApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +108,7 @@
 				2FB0758A299DDB9000C0B37F /* TestApp.xctestplan */,
 				2F68C3C6292E9F8F00B3E12C /* TemplatePackage */,
 				2F6D139428F5F384007C25D6 /* TestApp */,
-				2F6D13AF28F5F386007C25D6 /* TestApp UITests */,
+				2F6D13AF28F5F386007C25D6 /* TestAppUITests */,
 				2F6D139328F5F384007C25D6 /* Products */,
 				2F6D13C228F5F3BE007C25D6 /* Frameworks */,
 			);
@@ -118,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				2F6D139228F5F384007C25D6 /* TestApp.app */,
-				2F6D13AC28F5F386007C25D6 /* TestApp UITests.xctest */,
+				2F6D13AC28F5F386007C25D6 /* TestAppUITests.xctest */,
 				2F9CBEA62A76C40E009818FF /* TestApp Watch App.app */,
-				2F9CBEBF2A76C412009818FF /* TestApp Watch App UITests.xctest */,
+				2F9CBEBF2A76C412009818FF /* TestAppWatchAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,12 +134,12 @@
 			path = TestApp;
 			sourceTree = "<group>";
 		};
-		2F6D13AF28F5F386007C25D6 /* TestApp UITests */ = {
+		2F6D13AF28F5F386007C25D6 /* TestAppUITests */ = {
 			isa = PBXGroup;
 			children = (
 				2F8A431229130A8C005D2B8F /* TestAppUITests.swift */,
 			);
-			path = "TestApp UITests";
+			path = TestAppUITests;
 			sourceTree = "<group>";
 		};
 		2F6D13C228F5F3BE007C25D6 /* Frameworks */ = {
@@ -174,9 +174,9 @@
 			productReference = 2F6D139228F5F384007C25D6 /* TestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F6D13AB28F5F386007C25D6 /* TestApp UITests */ = {
+		2F6D13AB28F5F386007C25D6 /* TestAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F6D13BC28F5F386007C25D6 /* Build configuration list for PBXNativeTarget "TestApp UITests" */;
+			buildConfigurationList = 2F6D13BC28F5F386007C25D6 /* Build configuration list for PBXNativeTarget "TestAppUITests" */;
 			buildPhases = (
 				2F6D13A828F5F386007C25D6 /* Sources */,
 				2F6D13A928F5F386007C25D6 /* Frameworks */,
@@ -187,14 +187,14 @@
 			dependencies = (
 				2F6D13AE28F5F386007C25D6 /* PBXTargetDependency */,
 			);
-			name = "TestApp UITests";
+			name = TestAppUITests;
 			productName = ExampleUITests;
-			productReference = 2F6D13AC28F5F386007C25D6 /* TestApp UITests.xctest */;
+			productReference = 2F6D13AC28F5F386007C25D6 /* TestAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		2F9CBEA52A76C40E009818FF /* TestApp Watch App */ = {
+		2F9CBEA52A76C40E009818FF /* TestAppWatchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9CBECA2A76C412009818FF /* Build configuration list for PBXNativeTarget "TestApp Watch App" */;
+			buildConfigurationList = 2F9CBECA2A76C412009818FF /* Build configuration list for PBXNativeTarget "TestAppWatchApp" */;
 			buildPhases = (
 				2F9CBEA22A76C40E009818FF /* Sources */,
 				2F9CBEA32A76C40E009818FF /* Frameworks */,
@@ -204,7 +204,7 @@
 			);
 			dependencies = (
 			);
-			name = "TestApp Watch App";
+			name = TestAppWatchApp;
 			packageProductDependencies = (
 				2F9CBED92A76C795009818FF /* TemplatePackage */,
 			);
@@ -212,9 +212,9 @@
 			productReference = 2F9CBEA62A76C40E009818FF /* TestApp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F9CBEBE2A76C412009818FF /* TestApp Watch App UITests */ = {
+		2F9CBEBE2A76C412009818FF /* TestAppWatchAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F9CBED32A76C412009818FF /* Build configuration list for PBXNativeTarget "TestApp Watch App UITests" */;
+			buildConfigurationList = 2F9CBED32A76C412009818FF /* Build configuration list for PBXNativeTarget "TestAppWatchAppUITests" */;
 			buildPhases = (
 				2F9CBEBB2A76C412009818FF /* Sources */,
 				2F9CBEBC2A76C412009818FF /* Frameworks */,
@@ -225,9 +225,9 @@
 			dependencies = (
 				2F9CBEC12A76C412009818FF /* PBXTargetDependency */,
 			);
-			name = "TestApp Watch App UITests";
+			name = TestAppWatchAppUITests;
 			productName = "TestAppWatchOS Watch AppUITests";
-			productReference = 2F9CBEBF2A76C412009818FF /* TestApp Watch App UITests.xctest */;
+			productReference = 2F9CBEBF2A76C412009818FF /* TestAppWatchAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -270,9 +270,9 @@
 			projectRoot = "";
 			targets = (
 				2F6D139128F5F384007C25D6 /* TestApp */,
-				2F6D13AB28F5F386007C25D6 /* TestApp UITests */,
-				2F9CBEA52A76C40E009818FF /* TestApp Watch App */,
-				2F9CBEBE2A76C412009818FF /* TestApp Watch App UITests */,
+				2F6D13AB28F5F386007C25D6 /* TestAppUITests */,
+				2F9CBEA52A76C40E009818FF /* TestAppWatchApp */,
+				2F9CBEBE2A76C412009818FF /* TestAppWatchAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,13 +353,13 @@
 		};
 		2F9CBEC12A76C412009818FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F9CBEA52A76C40E009818FF /* TestApp Watch App */;
+			target = 2F9CBEA52A76C40E009818FF /* TestAppWatchApp */;
 			targetProxy = 2F9CBEC02A76C412009818FF /* PBXContainerItemProxy */;
 		};
 		2F9CBEC82A76C412009818FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
-			target = 2F9CBEA52A76C40E009818FF /* TestApp Watch App */;
+			target = 2F9CBEA52A76C40E009818FF /* TestAppWatchApp */;
 			targetProxy = 2F9CBEC72A76C412009818FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -921,7 +921,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F6D13BC28F5F386007C25D6 /* Build configuration list for PBXNativeTarget "TestApp UITests" */ = {
+		2F6D13BC28F5F386007C25D6 /* Build configuration list for PBXNativeTarget "TestAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F6D13BD28F5F386007C25D6 /* Debug */,
@@ -931,7 +931,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9CBECA2A76C412009818FF /* Build configuration list for PBXNativeTarget "TestApp Watch App" */ = {
+		2F9CBECA2A76C412009818FF /* Build configuration list for PBXNativeTarget "TestAppWatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F9CBECB2A76C412009818FF /* Debug */,
@@ -941,7 +941,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F9CBED32A76C412009818FF /* Build configuration list for PBXNativeTarget "TestApp Watch App UITests" */ = {
+		2F9CBED32A76C412009818FF /* Build configuration list for PBXNativeTarget "TestAppWatchAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F9CBED42A76C412009818FF /* Debug */,

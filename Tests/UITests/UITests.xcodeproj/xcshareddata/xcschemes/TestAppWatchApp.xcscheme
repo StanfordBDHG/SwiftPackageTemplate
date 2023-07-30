@@ -30,7 +30,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F9CBEA52A76C40E009818FF"
                BuildableName = "TestApp Watch App.app"
-               BlueprintName = "TestApp Watch App"
+               BlueprintName = "TestAppWatchApp"
                ReferencedContainer = "container:UITests.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -67,8 +67,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F9CBEBE2A76C412009818FF"
-               BuildableName = "TestApp Watch App UITests.xctest"
-               BlueprintName = "TestApp Watch App UITests"
+               BuildableName = "TestAppWatchAppUITests.xctest"
+               BlueprintName = "TestAppWatchAppUITests"
                ReferencedContainer = "container:UITests.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -90,7 +90,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F9CBEA52A76C40E009818FF"
             BuildableName = "TestApp Watch App.app"
-            BlueprintName = "TestApp Watch App"
+            BlueprintName = "TestAppWatchApp"
             ReferencedContainer = "container:UITests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -107,7 +107,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F9CBEA52A76C40E009818FF"
             BuildableName = "TestApp Watch App.app"
-            BlueprintName = "TestApp Watch App"
+            BlueprintName = "TestAppWatchApp"
             ReferencedContainer = "container:UITests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
