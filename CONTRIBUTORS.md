@@ -14,3 +14,4 @@ TemplatePackage contributors
 ====================
 
 * [Paul Schmiedmayer](https://github.com/PSchmiedmayer)
+* [Vishnu Ravi](https://github.com/vishnuravi)
