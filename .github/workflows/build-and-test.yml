@@ -27,7 +27,7 @@ jobs:
     name: Build and Test Swift Package watchOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      xcodeversion: latest
+      xcodeversion: latest-stable
       scheme: TemplatePackage
       destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
   packagevisionos:
