@@ -27,6 +27,7 @@ jobs:
     name: Build and Test UI Tests
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       artifactname: TestApp.xcresult
       xcodeversion: latest
       path: 'Tests/UITests'
@@ -35,6 +36,7 @@ jobs:
     name: Build and Test ipadOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       artifactname: TestApp.xcresult
       xcodeversion: latest
       path: 'Tests/UITests'
@@ -44,6 +46,7 @@ jobs:
     name: Build and Test macOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       artifactname: TestApp.xcresult
       xcodeversion: latest
       path: 'Tests/UITests'
@@ -53,6 +56,7 @@ jobs:
     name: Build and Test watchOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       artifactname: TestAppWatchApp.xcresult
       xcodeversion: latest
       path: 'Tests/UITests'
