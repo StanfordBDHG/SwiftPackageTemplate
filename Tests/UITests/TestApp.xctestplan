@@ -31,6 +31,13 @@
         "identifier" : "2F6D13AB28F5F386007C25D6",
         "name" : "TestAppUITests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:UITests.xcodeproj",
+        "identifier" : "2F9CBEBE2A76C412009818FF",
+        "name" : "TestApp Watch AppUITests"
+      }
     }
   ],
   "version" : 1
