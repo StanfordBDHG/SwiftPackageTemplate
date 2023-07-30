@@ -67,7 +67,7 @@ jobs:
       destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
   uploadcoveragereport:
     name: Upload Coverage Report
-    needs: [ios, buildandtestuitests]
+    needs: [packageios, ios]
     uses: StanfordBDHG/.github/.github/workflows/create-and-upload-coverage-report.yml@v2
     with:
       coveragereports: TemplatePackage.xcresult TestApp.xcresult
