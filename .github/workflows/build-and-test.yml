@@ -64,6 +64,16 @@ jobs:
       resultBundle: TestAppWatchApp.xcresult
       destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
       artifactname: TestAppWatchApp.xcresult
+  codeql:
+    name: CodeQL
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      codeql: true
+      xcodeversion: '14.3.1'
+      scheme: TemplatePackage
+    permissions:
+      security-events: write
+      actions: read
   uploadcoveragereport:
     name: Upload Coverage Report
     needs: [packageios, packagewatchos, packagevisionos, ios, ipados, watchos]
