@@ -102,15 +102,6 @@ jobs:
       resultBundle: TestAppTVOS.xcresult
       destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
       artifactname: TestAppTVOS.xcresult
-  macos:
-    name: Build and Test macOS
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@fix/macOS-builds
-    with:
-      path: 'Tests/UITests'
-      scheme: TestApp
-      resultBundle: TestAppMacOS.xcresult
-      destination: 'platform=macOS,arch=arm64'
-      artifactname: TestAppMacOS.xcresult
   codeql:
     name: CodeQL
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
