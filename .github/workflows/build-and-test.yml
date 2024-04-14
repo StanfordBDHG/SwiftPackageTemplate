@@ -35,7 +35,6 @@ jobs:
     name: Build and Test Swift Package visionOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      xcodeversion: latest
       scheme: TemplatePackage
       destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
       resultBundle: TemplatePackage-visionOS.xcresult
@@ -44,8 +43,6 @@ jobs:
     name: Build and Test Swift Package tvOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
-      xcodeversion: latest
       scheme: TemplatePackage
       resultBundle: TemplatePackage-tvOS.xcresult
       destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
@@ -54,8 +51,6 @@ jobs:
     name: Build and Test Swift Package macOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
-      xcodeversion: latest
       scheme: TemplatePackage
       resultBundle: TemplatePackage-macOS.xcresult
       destination: 'platform=macOS,arch=arm64'
