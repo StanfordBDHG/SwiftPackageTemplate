@@ -6,8 +6,8 @@
 // SPDX-License-Identifier: MIT
 //
 
-import XCTest
 import OSLog
+import XCTest
 
 
 class TestAppUITests: XCTestCase {
