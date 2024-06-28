@@ -57,50 +57,52 @@ jobs:
   #     resultBundle: TemplatePackage-macOS.xcresult
   #     destination: 'platform=macOS,arch=arm64'
   #     artifactname: TemplatePackage-macOS.xcresult
-  # ios:
-  #   name: Build and Test iOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     path: 'Tests/UITests'
-  #     scheme: TestApp
-  #     resultBundle: TestApp-iOS.xcresult
-  #     artifactname: TestApp-iOS.xcresult
-  # ipados:
-  #   name: Build and Test iPadOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     path: 'Tests/UITests'
-  #     scheme: TestApp
-  #     destination: 'platform=iOS Simulator,name=iPad Air (5th generation)'
-  #     resultBundle: TestApp-iPadOS.xcresult
-  #     artifactname: TestApp-iPadOS.xcresult
+  ios:
+    name: Build and Test iOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      path: 'Tests/UITests'
+      scheme: TestApp
+      resultBundle: TestApp-iOS.xcresult
+      artifactname: TestApp-iOS.xcresult
+  ipados:
+    name: Build and Test iPadOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      path: 'Tests/UITests'
+      scheme: TestApp
+      destination: 'platform=iOS Simulator,name=iPad Air (5th generation)'
+      resultBundle: TestApp-iPadOS.xcresult
+      artifactname: TestApp-iPadOS.xcresult
   watchos:
     name: Build and Test watchOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestAppWatchApp
-      destination: 'id=3C5F6AF7-5AB7-4FA4-9684-305E2533D6EA'
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm)'
       resultBundle: TestApp-watchOS.xcresult
       artifactname: TestApp-watchOS.xcresult
-  # visionos:
-  #   name: Build and Test visionOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     path: 'Tests/UITests'
-  #     scheme: TestApp
-  #     destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
-  #     resultBundle: TestApp-visionOS.xcresult
-  #     artifactname: TestApp-visionOS.xcresult
-  # tvos:
-  #   name: Build and Test tvOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     path: 'Tests/UITests'
-  #     scheme: TestApp
-  #     destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
-  #     resultBundle: TestApp-tvOS.xcresult
-  #     artifactname: TestApp-tvOS.xcresult
+  visionos:
+    name: Build and Test visionOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      runsonlabels: '["macOS", "self-hosted"]'
+      path: 'Tests/UITests'
+      scheme: TestApp
+      destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
+      resultBundle: TestApp-visionOS.xcresult
+      artifactname: TestApp-visionOS.xcresult
+  tvos:
+    name: Build and Test tvOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      path: 'Tests/UITests'
+      scheme: TestApp
+      destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
+      resultBundle: TestApp-tvOS.xcresult
+      artifactname: TestApp-tvOS.xcresult
   # codeql:
   #   name: CodeQL
   #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2

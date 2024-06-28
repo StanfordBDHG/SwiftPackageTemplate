@@ -21,5 +21,19 @@ class TestAppUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         XCTAssert(app.staticTexts["Stanford University"].waitForExistence(timeout: 0.1))
+        
+        if app.staticTexts["macOS"].exists {
+            print("Template Package is running on macOS.")
+        } else if app.staticTexts["iOS"].exists {
+            print("Template Package is running on iOS.")
+        } else if app.staticTexts["watchOS"].exists {
+            print("Template Package is running on watchOS.")
+        } else if app.staticTexts["visionOS"].exists {
+            print("Template Package is running on visionOS.")
+        } else if app.staticTexts["tvOS"].exists {
+            print("Template Package is running on tvOS.")
+        } else {
+            XCTFail("Running on an unexpected operating system.")
+        }
     }
 }
