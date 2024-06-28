@@ -16,6 +16,10 @@
 		2F9CBEDA2A76C795009818FF /* TemplatePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9CBED92A76C795009818FF /* TemplatePackage */; };
 		2F9CBEDB2A76C7EC009818FF /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A431229130A8C005D2B8F /* TestAppUITests.swift */; };
 		2FA7382C290ADFAA007ACEB9 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7382B290ADFAA007ACEB9 /* TestApp.swift */; };
+		2FB5B6E02C2F6C50009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
+		2FB5B6E12C2F6DBC009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
+		2FB5B6E22C2F707A009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
+		2FB5B6E32C2F707B009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,7 @@
 		2F9CBEBF2A76C412009818FF /* TestAppWatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppWatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7382B290ADFAA007ACEB9 /* TestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		2FB0758A299DDB9000C0B37F /* TestApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestApp.xctestplan; sourceTree = "<group>"; };
+		2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatingSystem.swift; sourceTree = "<group>"; };
 		2FF8922E2A770D4200903A5A /* TestAppWatchApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestAppWatchApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2FA7382B290ADFAA007ACEB9 /* TestApp.swift */,
+				2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */,
 				2F6D139928F5F386007C25D6 /* Assets.xcassets */,
 			);
 			path = TestApp;
@@ -326,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA7382C290ADFAA007ACEB9 /* TestApp.swift in Sources */,
+				2FB5B6E02C2F6C50009162E6 /* OperatingSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB5B6E22C2F707A009162E6 /* OperatingSystem.swift in Sources */,
 				2F8A431329130A8C005D2B8F /* TestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB5B6E12C2F6DBC009162E6 /* OperatingSystem.swift in Sources */,
 				2F9CBED72A76C752009818FF /* TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB5B6E32C2F707B009162E6 /* OperatingSystem.swift in Sources */,
 				2F9CBEDB2A76C7EC009818FF /* TestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

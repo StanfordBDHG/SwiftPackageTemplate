@@ -6,15 +6,17 @@
 # SPDX-License-Identifier: MIT
 #
 
-name: Pull Request
+name: Main
 
 on:
-  pull_request:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 concurrency:
-  group: build-${{ github.ref }}
-  cancel-in-progress: true
+  group: main
+  cancel-in-progress: false
 
 jobs:
   buildandtest:

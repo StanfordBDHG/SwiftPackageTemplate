@@ -9,13 +9,15 @@
 name: Build and Test
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
+  reuse_action:
+    name: REUSE Compliance Check
+    uses: StanfordBDHG/.github/.github/workflows/reuse.yml@v2
+  swiftlint:
+    name: SwiftLint
+    uses: StanfordBDHG/.github/.github/workflows/swiftlint.yml@v2
   packageios:
     name: Build and Test Swift Package iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
@@ -59,7 +61,6 @@ jobs:
     name: Build and Test iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestApp
       resultBundle: TestApp-iOS.xcresult
@@ -68,7 +69,6 @@ jobs:
     name: Build and Test iPadOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestApp
       destination: 'platform=iOS Simulator,name=iPad Air (5th generation)'
@@ -98,7 +98,6 @@ jobs:
     name: Build and Test tvOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
-      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestApp
       destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
