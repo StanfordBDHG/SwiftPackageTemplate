@@ -78,15 +78,17 @@ jobs:
     name: Build and Test watchOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestAppWatchApp
-      destination: 'platform=watchOS Simulator,id=953DCCC7-16C9-44E6-B1BC-0D333FDD9205,OS=10.0,name=Apple Watch Series 9 (45mm)'
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm)'
       resultBundle: TestApp-watchOS.xcresult
       artifactname: TestApp-watchOS.xcresult
   visionos:
     name: Build and Test visionOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestApp
       destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
