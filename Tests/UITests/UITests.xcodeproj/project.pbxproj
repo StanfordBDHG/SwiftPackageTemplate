@@ -18,6 +18,8 @@
 		2FA7382C290ADFAA007ACEB9 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7382B290ADFAA007ACEB9 /* TestApp.swift */; };
 		2FB5B6E02C2F6C50009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
 		2FB5B6E12C2F6DBC009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
+		2FB5B6E22C2F707A009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
+		2FB5B6E32C2F707B009162E6 /* OperatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5B6DF2C2F6C50009162E6 /* OperatingSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -338,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB5B6E22C2F707A009162E6 /* OperatingSystem.swift in Sources */,
 				2F8A431329130A8C005D2B8F /* TestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB5B6E32C2F707B009162E6 /* OperatingSystem.swift in Sources */,
 				2F9CBEDB2A76C7EC009818FF /* TestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
