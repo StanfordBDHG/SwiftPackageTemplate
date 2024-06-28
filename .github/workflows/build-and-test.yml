@@ -12,51 +12,51 @@ on:
   workflow_call:
 
 jobs:
-  # reuse_action:
-  #   name: REUSE Compliance Check
-  #   uses: StanfordBDHG/.github/.github/workflows/reuse.yml@v2
-  # swiftlint:
-  #   name: SwiftLint
-  #   uses: StanfordBDHG/.github/.github/workflows/swiftlint.yml@v2
-  # packageios:
-  #   name: Build and Test Swift Package iOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     scheme: TemplatePackage
-  #     resultBundle: TemplatePackage-iOS.xcresult
-  #     artifactname: TemplatePackage-iOS.xcresult
-  # packagewatchos:
-  #   name: Build and Test Swift Package watchOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     scheme: TemplatePackage
-  #     destination: 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm)'
-  #     resultBundle: TemplatePackage-watchOS.xcresult
-  #     artifactname: TemplatePackage-watchOS.xcresult
-  # packagevisionos:
-  #   name: Build and Test Swift Package visionOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     scheme: TemplatePackage
-  #     destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
-  #     resultBundle: TemplatePackage-visionOS.xcresult
-  #     artifactname: TemplatePackage-visionOS.xcresult
-  # packagetvos:
-  #   name: Build and Test Swift Package tvOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     scheme: TemplatePackage
-  #     resultBundle: TemplatePackage-tvOS.xcresult
-  #     destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
-  #     artifactname: TemplatePackage-tvOS.xcresult
-  # packagemacos:
-  #   name: Build and Test Swift Package macOS
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     scheme: TemplatePackage
-  #     resultBundle: TemplatePackage-macOS.xcresult
-  #     destination: 'platform=macOS,arch=arm64'
-  #     artifactname: TemplatePackage-macOS.xcresult
+  reuse_action:
+    name: REUSE Compliance Check
+    uses: StanfordBDHG/.github/.github/workflows/reuse.yml@v2
+  swiftlint:
+    name: SwiftLint
+    uses: StanfordBDHG/.github/.github/workflows/swiftlint.yml@v2
+  packageios:
+    name: Build and Test Swift Package iOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      scheme: TemplatePackage
+      resultBundle: TemplatePackage-iOS.xcresult
+      artifactname: TemplatePackage-iOS.xcresult
+  packagewatchos:
+    name: Build and Test Swift Package watchOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      scheme: TemplatePackage
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm)'
+      resultBundle: TemplatePackage-watchOS.xcresult
+      artifactname: TemplatePackage-watchOS.xcresult
+  packagevisionos:
+    name: Build and Test Swift Package visionOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      scheme: TemplatePackage
+      destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
+      resultBundle: TemplatePackage-visionOS.xcresult
+      artifactname: TemplatePackage-visionOS.xcresult
+  packagetvos:
+    name: Build and Test Swift Package tvOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      scheme: TemplatePackage
+      resultBundle: TemplatePackage-tvOS.xcresult
+      destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
+      artifactname: TemplatePackage-tvOS.xcresult
+  packagemacos:
+    name: Build and Test Swift Package macOS
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      scheme: TemplatePackage
+      resultBundle: TemplatePackage-macOS.xcresult
+      destination: 'platform=macOS,arch=arm64'
+      artifactname: TemplatePackage-macOS.xcresult
   ios:
     name: Build and Test iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
@@ -103,21 +103,21 @@ jobs:
       destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
       resultBundle: TestApp-tvOS.xcresult
       artifactname: TestApp-tvOS.xcresult
-  # codeql:
-  #   name: CodeQL
-  #   uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-  #   with:
-  #     codeql: true
-  #     test: false
-  #     scheme: TemplatePackage
-  #   permissions:
-  #     security-events: write
-  #     actions: read
-  # uploadcoveragereport:
-  #   name: Upload Coverage Report
-  #   needs: [packageios, packagewatchos, packagevisionos, packagetvos, packagemacos, ios, ipados, watchos, visionos, tvos]
-  #   uses: StanfordBDHG/.github/.github/workflows/create-and-upload-coverage-report.yml@v2
-  #   with:
-  #     coveragereports: TemplatePackage-iOS.xcresult TemplatePackage-watchOS.xcresult TemplatePackage-visionOS.xcresult TemplatePackage-tvOS.xcresult TemplatePackage-macOS.xcresult TestApp-iOS.xcresult TestApp-iPadOS.xcresult TestApp-watchOS.xcresult TestApp-visionOS.xcresult TestApp-tvOS.xcresult
-  #   secrets:
-  #     token: ${{ secrets.CODECOV_TOKEN }}
+  codeql:
+    name: CodeQL
+    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
+    with:
+      codeql: true
+      test: false
+      scheme: TemplatePackage
+    permissions:
+      security-events: write
+      actions: read
+  uploadcoveragereport:
+    name: Upload Coverage Report
+    needs: [packageios, packagewatchos, packagevisionos, packagetvos, packagemacos, ios, ipados, watchos, visionos, tvos]
+    uses: StanfordBDHG/.github/.github/workflows/create-and-upload-coverage-report.yml@v2
+    with:
+      coveragereports: TemplatePackage-iOS.xcresult TemplatePackage-watchOS.xcresult TemplatePackage-visionOS.xcresult TemplatePackage-tvOS.xcresult TemplatePackage-macOS.xcresult TestApp-iOS.xcresult TestApp-iPadOS.xcresult TestApp-watchOS.xcresult TestApp-visionOS.xcresult TestApp-tvOS.xcresult
+    secrets:
+      token: ${{ secrets.CODECOV_TOKEN }}
