@@ -25,6 +25,6 @@ class TestAppUITests: XCTestCase {
         XCTAssert(app.staticTexts["Stanford University"].waitForExistence(timeout: 0.1))
         XCTAssert(app.staticTexts[operatingSystem].exists)
         
-        Logger().warning("Running test on \(operatingSystem)")
+        XCTFail("Running test on \(operatingSystem)")
     }
 }
