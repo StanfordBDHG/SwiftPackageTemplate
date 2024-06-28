@@ -80,7 +80,7 @@ jobs:
     with:
       path: 'Tests/UITests'
       scheme: TestAppWatchApp
-      destination: 'platform=watchOS Simulator,OS=10.5,name=Apple Watch Series 9 (45mm)'
+      destination: 'platform=watchOS Simulator,id=953DCCC7-16C9-44E6-B1BC-0D333FDD9205,OS=10.0,name=Apple Watch Series 9 (45mm)'
       resultBundle: TestApp-watchOS.xcresult
       artifactname: TestApp-watchOS.xcresult
   visionos:
