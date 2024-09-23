@@ -30,7 +30,7 @@ jobs:
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
       scheme: TemplatePackage
-      destination: 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm)'
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 10 (46mm)'
       resultBundle: TemplatePackage-watchOS.xcresult
       artifactname: TemplatePackage-watchOS.xcresult
   packagevisionos:
@@ -71,7 +71,7 @@ jobs:
     with:
       path: 'Tests/UITests'
       scheme: TestApp
-      destination: 'platform=iOS Simulator,name=iPad Air (5th generation)'
+      destination: 'platform=iOS Simulator,name=iPad Air 13-inch (M2)'
       resultBundle: TestApp-iPadOS.xcresult
       artifactname: TestApp-iPadOS.xcresult
   watchos:
@@ -81,7 +81,7 @@ jobs:
       runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestAppWatchApp
-      destination: 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm)'
+      destination: 'platform=watchOS Simulator,name=Apple Watch Series 10 (46mm)'
       resultBundle: TestApp-watchOS.xcresult
       artifactname: TestApp-watchOS.xcresult
   visionos:
@@ -103,16 +103,6 @@ jobs:
       destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
       resultBundle: TestApp-tvOS.xcresult
       artifactname: TestApp-tvOS.xcresult
-  codeql:
-    name: CodeQL
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      codeql: true
-      test: false
-      scheme: TemplatePackage
-    permissions:
-      security-events: write
-      actions: read
   uploadcoveragereport:
     name: Upload Coverage Report
     needs: [packageios, packagewatchos, packagevisionos, packagetvos, packagemacos, ios, ipados, watchos, visionos, tvos]
