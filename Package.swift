@@ -58,4 +58,3 @@ func swiftLintPackage() -> [PackageDescription.Package.Dependency] {
         []
     }
 }
-
