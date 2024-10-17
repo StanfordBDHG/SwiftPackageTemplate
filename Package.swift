@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:6.0
 
 //
 // This source file is part of the TemplatePackage open source project
@@ -8,6 +8,7 @@
 // SPDX-License-Identifier: MIT
 //
 
+import class Foundation.ProcessInfo
 import PackageDescription
 
 
@@ -23,15 +24,37 @@ let package = Package(
     products: [
         .library(name: "TemplatePackage", targets: ["TemplatePackage"])
     ],
+    dependencies: [
+    ] + swiftLintPackage(),
     targets: [
         .target(
-            name: "TemplatePackage"
+            name: "TemplatePackage",
+            plugins: [] + swiftLintPlugin()
         ),
         .testTarget(
             name: "TemplatePackageTests",
             dependencies: [
                 .target(name: "TemplatePackage")
-            ]
+            ],
+            plugins: [] + swiftLintPlugin()
         )
     ]
 )
+
+
+func swiftLintPlugin() -> [Target.PluginUsage] {
+    // Fully quit Xcode and open again with `open --env SPEZI_DEVELOPMENT_SWIFTLINT /Applications/Xcode.app`
+    if ProcessInfo.processInfo.environment["SPEZI_DEVELOPMENT_SWIFTLINT"] != nil {
+        [.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLint")]
+    } else {
+        []
+    }
+}
+
+func swiftLintPackage() -> [PackageDescription.Package.Dependency] {
+    if ProcessInfo.processInfo.environment["SPEZI_DEVELOPMENT_SWIFTLINT"] != nil {
+        [.package(url: "https://github.com/realm/SwiftLint.git", from: "0.55.1")]
+    } else {
+        []
+    }
+}

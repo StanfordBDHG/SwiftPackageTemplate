@@ -37,6 +37,7 @@ jobs:
     name: Build and Test Swift Package visionOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
     with:
+      runsonlabels: '["macOS", "self-hosted"]'
       scheme: TemplatePackage
       destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
       resultBundle: TemplatePackage-visionOS.xcresult
@@ -71,7 +72,7 @@ jobs:
     with:
       path: 'Tests/UITests'
       scheme: TestApp
-      destination: 'platform=iOS Simulator,name=iPad Air (5th generation)'
+      destination: 'platform=iOS Simulator,name=iPad Air 13-inch (M2)'
       resultBundle: TestApp-iPadOS.xcresult
       artifactname: TestApp-iPadOS.xcresult
   watchos:
@@ -103,16 +104,6 @@ jobs:
       destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
       resultBundle: TestApp-tvOS.xcresult
       artifactname: TestApp-tvOS.xcresult
-  codeql:
-    name: CodeQL
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      codeql: true
-      test: false
-      scheme: TemplatePackage
-    permissions:
-      security-events: write
-      actions: read
   uploadcoveragereport:
     name: Upload Coverage Report
     needs: [packageios, packagewatchos, packagevisionos, packagetvos, packagemacos, ios, ipados, watchos, visionos, tvos]
