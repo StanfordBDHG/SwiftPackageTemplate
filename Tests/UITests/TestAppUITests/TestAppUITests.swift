@@ -17,7 +17,8 @@ class TestAppUITests: XCTestCase {
         continueAfterFailure = false
     }
     
-    
+
+    @MainActor
     func testTemplatePackage() throws {
         let app = XCUIApplication()
         app.launch()
