@@ -18,6 +18,11 @@ jobs:
   swiftlint:
     name: SwiftLint
     uses: StanfordBDHG/.github/.github/workflows/swiftlint.yml@v2
+  breaking_changes:
+    name: Diagnose Breaking Changes
+    uses: StanfordBDHG/.github/.github/workflows/breaking-changes.yml@v2
+    with:
+      runsonlabels: '["macOS", "self-hosted"]'
   packageios:
     name: Build and Test Swift Package iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
