@@ -1,5 +1,5 @@
 #
-# This source file is part of the Stanford Spezi open source project
+# This source file is part of the Stanford Biodesign Digital Health Group Swift Template Package open source project
 #
 # SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
 #
@@ -31,10 +31,14 @@ jobs:
             destination: 'platform=iOS Simulator,name=iPhone 16 Pro'
           - name: macOS
             destination: 'platform=macOS,arch=arm64'
+          - name: 'Mac Catalyst'
+            destination: 'platform=macOS,arch=arm64, variant=Mac Catalyst'
           - name: watchOS
             destination: 'platform=watchOS Simulator,name=Apple Watch Series 10 (46mm)'
           - name: visionOS
             destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
+          - name: tvOS
+            destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
       fail-fast: false
     with:
       runsonlabels: '["macOS", "self-hosted"]'
@@ -51,12 +55,25 @@ jobs:
         config: [Debug, Release]
         platform:
           - name: iOS
+            scheme: TestApp
             destination: 'platform=iOS Simulator,name=iPhone 16 Pro'
+          - name: iPadOS
+            scheme: TestApp
+            destination: 'platform=iOS Simulator,name=iPad Air 13-inch (M2)'
+          - name: watchOS
+            scheme: TestAppWatchApp
+            destination: 'platform=watchOS Simulator,name=Apple Watch Series 10 (46mm)'
+          - name: visionOS
+            scheme: TestApp
+            destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
+          - name: tvOS
+            scheme: TestApp
+            destination: 'platform=tvOS Simulator,name=Apple TV 4K (3rd generation)'
       fail-fast: false
     with:
       runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
-      scheme: TestApp
+      scheme: ${{ matrix.platform.scheme }}
       destination: ${{ matrix.platform.destination }}
       resultBundle: ${{ format('TestApp-{0}-{1}.xcresult', matrix.platform.name, matrix.config) }}
       artifactname: ${{ format('TestApp-{0}-{1}.xcresult', matrix.platform.name, matrix.config) }}
