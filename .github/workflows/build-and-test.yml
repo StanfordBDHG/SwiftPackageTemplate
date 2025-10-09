@@ -28,13 +28,13 @@ jobs:
         config: [Debug, Release]
         platform:
           - name: iOS
-            destination: 'platform=iOS Simulator,name=iPhone 16 Pro'
+            destination: 'platform=iOS Simulator,name=iPhone 17 Pro'
           - name: macOS
             destination: 'platform=macOS,arch=arm64'
           - name: 'Mac Catalyst'
             destination: 'platform=macOS,arch=arm64,variant=Mac Catalyst'
           - name: watchOS
-            destination: 'platform=watchOS Simulator,name=Apple Watch Series 10 (46mm)'
+            destination: 'platform=watchOS Simulator,name=Apple Watch Series 11 (46mm)'
           - name: visionOS
             destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
           - name: tvOS
@@ -56,13 +56,13 @@ jobs:
         platform:
           - name: iOS
             scheme: TestApp
-            destination: 'platform=iOS Simulator,name=iPhone 16 Pro'
+            destination: 'platform=iOS Simulator,name=iPhone 17 Pro'
           - name: iPadOS
             scheme: TestApp
             destination: 'platform=iOS Simulator,name=iPad Air 13-inch (M3)'
           - name: watchOS
             scheme: TestAppWatchApp
-            destination: 'platform=watchOS Simulator,name=Apple Watch Series 10 (46mm)'
+            destination: 'platform=watchOS Simulator,name=Apple Watch Series 11 (46mm)'
           - name: visionOS
             scheme: TestApp
             destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
