@@ -7,12 +7,13 @@
 //
 
 @testable import TemplatePackage
-import XCTest
+import Testing
 
 
-final class TemplatePackageTests: XCTestCase {
-    func testTemplatePackage() throws {
+struct TemplatePackageTests {
+    @Test
+    func templatePackage() {
         let templatePackage = TemplatePackage()
-        XCTAssertEqual(templatePackage.stanford, "Stanford University")
+        #expect(templatePackage.stanford == "Stanford University")
     }
 }
