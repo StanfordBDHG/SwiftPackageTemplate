@@ -40,7 +40,7 @@ The project can be added to your Xcode project or Swift Package using the [Swift
 
 **Xcode:** For an Xcode project, follow the instructions on [adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
-**Swift Package:** You can follow the [Swift Package Manager documentation about defining dependencies](https://github.com/apple/swift-package-manager/blob/main/Documentation/Usage.md#defining-dependencies) to add this project as a dependency to your Swift Package.
+**Swift Package:** You can follow the [Swift Package Manager documentation about defining dependencies](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/addingdependencies/) to add this project as a dependency to your Swift Package.
 
 
 ## License
@@ -48,8 +48,8 @@ This project is licensed under the MIT License. See [Licenses](https://github.co
 
 
 ## Contributors
-This project is developed as part of the Stanford Byers Center for Biodesign at Stanford University.
+This project is developed as part of the Stanford Mussallem Center for Biodesign at Stanford University.
 See [CONTRIBUTORS.md](https://github.com/StanfordBDHG/SwiftPackageTemplate/tree/main/CONTRIBUTORS.md) for a full list of all TemplatePackage contributors.
 
-![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-light.png#gh-light-mode-only)
-![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-dark.png#gh-dark-mode-only)
+![Stanford Biodesign Footer](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-light.png#gh-light-mode-only)
+![Stanford Biodesign Footer](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-dark.png#gh-dark-mode-only)
