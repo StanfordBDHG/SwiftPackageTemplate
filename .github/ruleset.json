@@ -1,0 +1,164 @@
+{
+  "id": 7676110,
+  "name": "Main",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "StanfordBDHG/SwiftPackageTemplate",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~DEFAULT_BRANCH"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "creation"
+    },
+    {
+      "type": "required_linear_history"
+    },
+    {
+      "type": "required_signatures"
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 1,
+        "dismiss_stale_reviews_on_push": false,
+        "required_reviewers": [],
+        "require_code_owner_review": false,
+        "require_last_push_approval": false,
+        "required_review_thread_resolution": true,
+        "allowed_merge_methods": [
+          "squash"
+        ]
+      }
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": true,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "codecov/patch",
+            "integration_id": 254
+          },
+          {
+            "context": "codecov/project",
+            "integration_id": 254
+          },
+          {
+            "context": "CI / Build & Test / UI iOS (Debug) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI iOS (Release) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Linux (Debug) / Swift Test",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Linux (Release) / Swift Test",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / watchOS (Debug) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / watchOS (Release) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / iOS (Debug) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / iOS (Release) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / visionOS (Debug) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / visionOS (Release) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Mac Catalyst (Debug) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Mac Catalyst (Release) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / macOS (Debug) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / macOS (Release) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / tvOS (Debug) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / tvOS (Release) / Test using xcodebuild or run fastlane",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Static Analysis / Diagnose Breaking Changes / Diagnose Breaking Changes",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Static Analysis / Markdown Link Check / Check Links",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Static Analysis / REUSE Compliance Check / REUSE Compliance Check",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Static Analysis / SwiftLint / SwiftLint",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Setup / Parse Package Manifest",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Upload Coverage Report / Create and upload coverage report",
+            "integration_id": 15368
+          }
+        ]
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": null,
+      "actor_type": "OrganizationAdmin",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": 5,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    }
+  ]
+}
