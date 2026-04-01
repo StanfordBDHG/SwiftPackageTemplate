@@ -58,67 +58,107 @@
             "integration_id": 254
           },
           {
-            "context": "CI / Build & Test / UI iOS (Debug) / Test using xcodebuild or run fastlane",
+            "context": "CI / Setup / Parse Package Manifest",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / UI iOS (Release) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / iOS (Debug) / iOS (Debug)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / Linux (Debug) / Swift Test",
+            "context": "CI / Build & Test / iOS (Release) / iOS (Release)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / Linux (Release) / Swift Test",
+            "context": "CI / Build & Test / watchOS (Debug) / watchOS (Debug)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / watchOS (Debug) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / watchOS (Release) / watchOS (Release)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / watchOS (Release) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / visionOS (Debug) / visionOS (Debug)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / iOS (Debug) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / visionOS (Release) / visionOS (Release)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / iOS (Release) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / tvOS (Debug) / tvOS (Debug)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / visionOS (Debug) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / tvOS (Release) / tvOS (Release)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / visionOS (Release) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / macOS (Debug) / macOS (Debug)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / Mac Catalyst (Debug) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / macOS (Release) / macOS (Release)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / Mac Catalyst (Release) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / Mac Catalyst (Debug) / Mac Catalyst (Debug)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / macOS (Debug) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / Mac Catalyst (Release) / Mac Catalyst (Release)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / macOS (Release) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / UI iOS (Debug) / UI iOS (Debug)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / tvOS (Debug) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / UI iOS (Release) / UI iOS (Release)",
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / tvOS (Release) / Test using xcodebuild or run fastlane",
+            "context": "CI / Build & Test / UI iPadOS (Debug) / UI iPadOS (Debug)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI iPadOS (Release) / UI iPadOS (Release)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI visionOS (Debug) / UI visionOS (Debug)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI visionOS (Release) / UI visionOS (Release)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI tvOS (Debug) / UI tvOS (Debug)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI tvOS (Release) / UI tvOS (Release)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI watchOS (Debug) / UI watchOS (Debug)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / UI watchOS (Release) / UI watchOS (Release)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Linux (Debug) / Linux (Debug)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Linux (Release) / Linux (Release)",
+            "integration_id": 15368
+          },
+          {
+            "context": "CI / Build & Test / Upload Coverage Report / Create and upload coverage report",
             "integration_id": 15368
           },
           {
@@ -135,14 +175,6 @@
           },
           {
             "context": "CI / Static Analysis / SwiftLint / SwiftLint",
-            "integration_id": 15368
-          },
-          {
-            "context": "CI / Setup / Parse Package Manifest",
-            "integration_id": 15368
-          },
-          {
-            "context": "CI / Build & Test / Upload Coverage Report / Create and upload coverage report",
             "integration_id": 15368
           }
         ]
