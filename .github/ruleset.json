@@ -142,14 +142,6 @@
             "integration_id": 15368
           },
           {
-            "context": "CI / Build & Test / UI macOS (Debug) / UI macOS (Debug)",
-            "integration_id": 15368
-          },
-          {
-            "context": "CI / Build & Test / UI macOS (Release) / UI macOS (Release)",
-            "integration_id": 15368
-          },
-          {
             "context": "CI / Build & Test / UI watchOS (Debug) / UI watchOS (Debug)",
             "integration_id": 15368
           },
